@@ -1,25 +1,45 @@
-# Number---Guessing---Game
-import random
+# Number Guessing Game using Python
 
-secret_number = random.randint(1, 100)
-attempts = 7
+## Project Description
 
-print("Welcome to Number Guessing Game!")
-print("Guess a number between 1 and 100")
+This project is a Number Guessing Game developed using Python as part of the Codveda Python Development Internship.
 
-for i in range(attempts):
-    guess = int(input("Enter your guess: "))
+The program generates a random number between 1 and 100, and the user must guess the correct number within a limited number of attempts. After each guess, the program provides feedback indicating whether the guess is too high or too low. The game ends when the user guesses the correct number or runs out of attempts.
 
-    if guess == secret_number:
-        print("Congratulations! You guessed the number.")
-        break
-    elif guess < secret_number:
-        print("Too Low!")
-    else:
-        print("Too High!")
+## Features
 
-    print("Attempts left:", attempts - i - 1)
+- Random number generation
+- User input handling
+- Multiple guessing attempts
+- "Too High" and "Too Low" hints
+- Winning and Game Over messages
+- Simple command-line interface
 
-else:
-    print("Game Over!")
-    print("The correct number was:", secret_number)
+## Technologies Used
+
+- Python
+- Random Module
+
+## Learning Outcomes
+
+Through this project, I gained practical experience with:
+
+- Python Loops
+- Conditional Statements
+- User Input Handling
+- Random Number Generation
+- Problem-Solving Logic
+
+## How to Run
+
+1. Download the project files.
+2. Open the project in VS Code.
+3. Run the following command:
+
+```bash
+python guess_game.py
+```
+
+## Author
+
+Aadya Srivastava
